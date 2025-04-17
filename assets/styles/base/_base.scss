@@ -1,14 +1,26 @@
-body {
-    font-family: $font-main;
-    color: $text-color;
-    background-color: $secondary-color;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+// _base.scss
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: $font-main;
+    background-color: $secondary-color;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
   }
   
   .container {
-    max-width: 1140px;
+    width: 80%;
     margin: 0 auto;
-    padding: 0 1rem;
   }
   
