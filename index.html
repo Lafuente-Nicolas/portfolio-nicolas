@@ -3,49 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio de Nicolas, développeur intégrateur web en formation." />
   <title>Portfolio de Nicolas</title>
+  <meta name="description" content="Portfolio de Nicolas, développeur intégrateur web. Découvrez mes projets et compétences." />
   <link rel="stylesheet" href="assets/styles/main.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <header class="header">
+  <header class="header" role="banner">
     <div class="container">
-      <h1>Portfolio de Nicolas</h1>
+      <h1 class="header__logo">Portfolio de Nicolas</h1>
       <nav class="nav" role="navigation" aria-label="Menu principal">
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="#">Projets</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">À propos</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul class="nav__list">
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main role="main">
+
     <section class="hero" aria-labelledby="titre-hero">
       <div class="container">
-        <h2 id="titre-hero">Développeur Intégrateur Web</h2>
-        <p>Je suis Nicolas, 19 ans, actuellement en formation intensive chez Simplon. Je réalise des sites vitrines modernes et responsive pour les petites entreprises.</p>
+        <h2 id="titre-hero">Bienvenue sur mon portfolio</h2>
+        <p>Je suis Nicolas, un développeur web passionné. Découvrez mes projets et compétences.</p>
+        <a href="#projets" class="btn">Découvrir mes projets</a>
       </div>
     </section>
 
-    <section class="introduction" aria-labelledby="titre-intro">
-      <div class="container">
-        <h2 id="titre-intro">Pourquoi me faire confiance ?</h2>
-        <p>Je combine rigueur, sens du détail et motivation. Chaque projet est l’occasion de mettre en pratique mes compétences et de proposer des solutions claires, accessibles et sur mesure.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2025 - Nicolas. Tous droits réservés.</p>
-    </div>
-  </footer>
-
-</body>
-</html>
