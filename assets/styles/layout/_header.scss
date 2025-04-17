@@ -1,26 +1,37 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
 .header {
     background-color: $primary-color;
     color: white;
     padding: 1rem 0;
   
-    h1 {
-      margin: 0;
+    .header__logo {
+      font-family: $font-heading;
+      font-size: 2rem;
     }
   
-    .nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-      padding: 0;
-    }
+    .nav {
+      text-align: center;
   
-    .nav a {
-      color: white;
-      text-decoration: none;
+      .nav__list {
+        list-style: none;
+        display: inline-flex;
+        gap: 1rem;
   
-      &:hover {
-        text-decoration: underline;
+        li {
+          display: inline-block;
+        }
+  
+        a {
+          color: white;
+          font-size: 1.1rem;
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #e6c79c;
+          }
+        }
       }
     }
   }
-  
