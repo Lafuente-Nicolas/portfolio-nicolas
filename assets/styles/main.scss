@@ -1,25 +1,25 @@
 // main.scss
 
 // Abstracts
-@import "abstracts/variables";
-@import "abstracts/mixins";
-@import "abstracts/functions";
+@use "abstracts/variables";
+@use "abstracts/mixins";
+@use "abstracts/functions";
 
 // Base
-@import "base/reset";
-@import "base/typography";
-@import "base/base";
+@use "base/reset";
+@use "base/typography";
+@use "base/base";
 
 // Layout
-@import "layout/header";
-@import "layout/footer";
-@import "layout/navigation";
+@use "layout/header";
+@use "layout/footer";
+@use "layout/navigation";
 
 // Components
-@import "components/buttons";
+@use "components/buttons";
 
 // Pages
-@import "pages/home";
+@use "pages/home";
 
 // Theme
-@import "themes/default";
+@use "themes/default";
