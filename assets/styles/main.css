@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #0077b6;
+  color: white;
+  padding: 1rem 0;
+}
+.header .header__logo {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+}
+.header .nav {
+  text-align: center;
+}
+.header .nav .nav__list {
+  list-style: none;
+  display: inline-flex;
+  gap: 1rem;
+}
+.header .nav .nav__list li {
+  display: inline-block;
+}
+.header .nav .nav__list a {
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+.header .nav .nav__list a:hover {
+  color: #e6c79c;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: #333;
+  color: white;
+}
+
+.projets {
+  padding: 4rem 0;
+}
+.projets .projets__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.projets .projet-card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.projets .projet-card h3 {
+  font-size: 1.8rem;
+  color: #0077b6;
+  margin-bottom: 1rem;
+}
+.projets .projet-card p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+.projets .projet-card img {
+  max-width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.projets .projet-card a {
+  display: inline-block;
+  background-color: #0077b6;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+.projets .projet-card a:hover {
+  background-color: #0077b6, 10%;
+}
+
+.competences {
+  background-color: #f9f9f9;
+  padding: 4rem 0;
+}
+.competences .competences__list {
+  list-style: none;
+  font-size: 1.2rem;
+  color: #333;
+}
+.competences .competences__list li {
+  margin: 0.5rem 0;
+}
+
+.contact {
+  text-align: center;
+  padding: 4rem 0;
+}
+.contact p {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+.contact .btn {
+  background-color: #0077b6;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+.contact .btn:hover {
+  background-color: #0077b6, 10%;
+}
+
+/*# sourceMappingURL=main.css.map */
