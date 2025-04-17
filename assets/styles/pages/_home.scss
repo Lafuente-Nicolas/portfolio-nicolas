@@ -1,92 +1,95 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-
-.projets {
-    padding: 4rem 0;
-  
-    .projets__list {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-  
-    .projet-card {
-      background-color: white;
-      padding: 2rem;
-      border-radius: 1rem;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  
-      h3 {
-        font-size: 1.8rem;
-        color: $primary-color;
-        margin-bottom: 1rem;
-      }
-  
-      p {
-        font-size: 1rem;
-        color: #666;
-        margin-bottom: 1rem;
-      }
-  
-      img {
-        max-width: 100%;
-        border-radius: 1rem;
-        margin-bottom: 1rem;
-      }
-  
-      a {
-        display: inline-block;
-        background-color: $primary-color;
-        color: white;
-        padding: 1rem 2rem;
-        border-radius: 0.5rem;
-        font-size: 1.1rem;
-        text-decoration: none;
-        transition: background-color 0.3s;
-  
-        &:hover {
-          background-color: ($primary-color, 10%);
-        }
-      }
-    }
-  }
-
-  .competences {
-    background-color: #f9f9f9;
-    padding: 4rem 0;
-  
-    .competences__list {
-      list-style: none;
-      font-size: 1.2rem;
-      color: #333;
-  
-      li {
-        margin: 0.5rem 0;
-      }
-    }
-  }
-  
-  .contact {
+// Sections
+section {
+    padding: 40px 20px;
     text-align: center;
-    padding: 4rem 0;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-family: $font-secondary;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: $primary-color;
+  }
+  
+  h3 {
+    font-family: $font-main;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: $primary-color;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: $text-color;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  // Competence Section
+.competences {
+    background-color: #F1F1F1;
+  }
+  
+  .competence {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    h3 {
+      font-size: 2rem;
+      color: $primary-color;
+      margin-bottom: 10px;
+    }
   
     p {
-      font-size: 1.2rem;
-      color: #333;
-      margin-bottom: 1.5rem; // espace entre la phrase et le bouton
+      font-size: 1.1rem;
+    }
+  }
+  
+  // Projet Section
+  .projets {
+    background-color: #F1F1F1;
+  }
+  
+  .projet {
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
+    h3 {
+      font-size: 2rem;
+      color: $primary-color;
+      margin-bottom: 10px;
     }
   
-    .btn {
-      background-color: $primary-color;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 0.5rem;
+    p {
       font-size: 1.1rem;
+    }
+  }
+  
+  // Contact Section
+  .contact {
+    background-color: $secondary-color;
+    color: white;
+  
+    a {
+      color: white;
       text-decoration: none;
+      font-weight: bold;
   
       &:hover {
-        background-color: ($primary-color, 10%);
+        color: $accent-color;
       }
     }
   }
+  

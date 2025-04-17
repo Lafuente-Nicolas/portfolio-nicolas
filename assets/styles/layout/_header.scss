@@ -1,37 +1,40 @@
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
 
-.header {
+header {
     background-color: $primary-color;
     color: white;
-    padding: 1rem 0;
+    padding: 20px 0;
+    text-align: center;
   
-    .header__logo {
-      font-family: $font-heading;
-      font-size: 2rem;
+    h1 {
+      font-family: $font-secondary;
+      font-size: 3rem;
+      color: white;
     }
   
-    .nav {
-      text-align: center;
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 15px;
+      flex-wrap: wrap;
   
-      .nav__list {
-        list-style: none;
-        display: inline-flex;
-        gap: 1rem;
-  
-        li {
-          display: inline-block;
-        }
+      li {
+        margin: 0 15px;
   
         a {
+          text-decoration: none;
           color: white;
+          font-weight: bold;
+          text-transform: uppercase;
           font-size: 1.1rem;
-          transition: color 0.3s;
   
           &:hover {
-            color: #e6c79c;
+            color: $accent-color;
           }
         }
       }
     }
   }
+  

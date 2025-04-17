@@ -1,5 +1,14 @@
-// _variables.scss
-$primary-color: #0077b6;
-$secondary-color: #f4f4f4;
-$font-main: 'Inter', sans-serif;
-$font-heading: 'Quicksand', sans-serif;
+// Déclaration des variables
+$primary-color: #4A90E2;
+$secondary-color: #50E3C2;
+$font-main: 'Quicksand', sans-serif;
+$font-secondary: 'Sacramento', cursive;
+$text-color: #4A4A4A;
+$background-color: #FFF8F1;
+$accent-color: #E6C79C;
+
+// Variables de polices
+$font-main: 'Quicksand', sans-serif;   // Police principale pour le corps du texte
+$font-secondary: 'Sacramento', cursive; // Police secondaire pour les titres ou accents
+$font-body: 'Nunito', sans-serif;      // Police pour le texte courant (plus lisible pour le corps du texte)
+$font-header: 'Quicksand', sans-serif; // Police pour les titres (peut être la même que le corps, ou différente)
