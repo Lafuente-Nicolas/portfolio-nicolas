@@ -46,8 +46,47 @@
         transition: background-color 0.3s;
   
         &:hover {
-          background-color: darken($primary-color, 10%);
+          background-color: ($primary-color, 10%);
         }
+      }
+    }
+  }
+
+  .competences {
+    background-color: #f9f9f9;
+    padding: 4rem 0;
+  
+    .competences__list {
+      list-style: none;
+      font-size: 1.2rem;
+      color: #333;
+  
+      li {
+        margin: 0.5rem 0;
+      }
+    }
+  }
+  
+  .contact {
+    text-align: center;
+    padding: 4rem 0;
+  
+    p {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 1.5rem; // espace entre la phrase et le bouton
+    }
+  
+    .btn {
+      background-color: $primary-color;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 0.5rem;
+      font-size: 1.1rem;
+      text-decoration: none;
+  
+      &:hover {
+        background-color: ($primary-color, 10%);
       }
     }
   }
