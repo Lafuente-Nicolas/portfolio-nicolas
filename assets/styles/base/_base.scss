@@ -1,0 +1,14 @@
+body {
+    font-family: $font-main;
+    color: $text-color;
+    background-color: $secondary-color;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
