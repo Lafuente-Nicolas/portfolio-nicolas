@@ -1,72 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio de Nicolas</title>
-    <link rel="stylesheet" href="assets/styles/main.css">
-</head>
-
-<body>
-    <header>
-        <h1>Portfolio de Nicolas</h1>
-        <nav>
-            <ul>
-                <li><a href="#accueil">Accueil</a></li>
-                <li><a href="#competences">Compétences</a></li>
-                <li><a href="#projets">Projets</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand:wght@500;700&family=Sacramento&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Nunito', sans-serif;
+      }
+      h1, h2, h3 {
+        font-family: 'Quicksand', sans-serif;
+      }
+      .accent {
+        font-family: 'Sacramento', cursive;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F2F4F3] text-[#0A0908] scroll-smooth">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+      <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
+        <h1 class="text-2xl font-bold text-[#4A90E2]">Nicolas</h1>
+        <ul class="flex gap-6 text-sm">
+          <li><a href="./pages/projets" class="hover:text-[#E46804]">Projets</a></li>
+          <li><a href="./pages/contact" class="hover:text-[#E46804]">Contact</a></li>
+          <li><a href="./pages/cv.html" class="hover:text-[#E46804]">CV</a></li>
+          <li><a href="./pages/compétences" class="hover:text-[#E46804]">Compétences</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <section id="accueil" class="accueil">
-        <header>
-            <h2>Bienvenue sur mon portfolio !</h2>
-        </header>
-        <p>Je suis Nicolas, développeur web passionné par la création de sites modernes et fonctionnels.</p>
-    </section>
-
-    <section id="competences" class="competences">
-        <header>
-            <h2>Mes compétences</h2>
-        </header>
-        <article class="competence">
-            <h3>HTML & CSS</h3>
-            <p>Je maîtrise les bases du HTML5 et du CSS3 pour créer des pages web responsive et accessibles.</p>
-        </article>
-        <article class="competence">
-            <h3>SCSS</h3>
-            <p>Je travaille avec SCSS pour structurer et organiser mes feuilles de style de manière propre et maintenable.</p>
-        </article>
-        <article class="competence">
-            <h3>JavaScript (prochainement)</h3>
-            <p>Je me forme actuellement à JavaScript pour ajouter des fonctionnalités interactives à mes projets.</p>
-        </article>
-    </section>
-
-    <section id="projets" class="projets">
-        <header>
-            <h2>Mes projets</h2>
-        </header>
-        <article class="projet">
-            <h3>Site vitrine pour une photographe</h3>
-            <p>Un site élégant et responsive pour une photographe professionnelle. Ce projet m'a permis de travailler sur la conception de pages simples et épurées.</p>
-        </article>
-    </section>
-
-    <section id="contact" class="contact">
-        <header>
-            <h2>Contactez-moi</h2>
-        </header>
-        <p>Vous avez un projet en tête ? Contactez-moi pour en discuter !</p>
-        <p><a href="mailto:lafuentenicolas1@gmail.com">lafuentenicolas1@gmail.com</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Portfolio de Nicolas. Tous droits réservés.</p>
-    </footer>
-</body>
-
-</html>
+   
