@@ -23,82 +23,105 @@
     <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
       <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
         <h1 class="text-2xl font-bold text-[#4A90E2]">Nicolas</h1>
-        <ul class="flex gap-6 text-sm">
+
+        <!-- Menu Burger -->
+        <div class="block lg:hidden">
+          <button id="burgerIcon" class="text-[#4A90E2] focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Menu Desktop -->
+        <ul id="menuDesktop" class="hidden lg:flex gap-6 text-sm">
           <li><a href="./pages/projets.html" class="hover:text-[#E46804]">Projets</a></li>
           <li><a href="./pages/contact.html" class="hover:text-[#E46804]">Contact</a></li>
           <li><a href="./pages/cv.html" class="hover:text-[#E46804]">CV</a></li>
           <li><a href="./pages/compétences.html" class="hover:text-[#E46804]">Compétences</a></li>
         </ul>
+
+        <!-- Menu Mobile -->
+        <ul id="menuMobile" class="lg:hidden absolute top-16 left-0 w-full bg-white shadow-md p-4 hidden">
+          <li><a href="./pages/projets.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Projets</a></li>
+          <li><a href="./pages/contact.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Contact</a></li>
+          <li><a href="./pages/cv.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">CV</a></li>
+          <li><a href="./pages/compétences.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Compétences</a></li>
+        </ul>
       </nav>
     </header>
 
-    <!-- Hero -->
+    <!-- Hero Section -->
     <section class="pt-32 pb-20 px-6 text-center bg-gradient-to-r from-[#4A90E2] to-[#668586] text-white">
-        <div class="max-w-3xl mx-auto">
-          <p class="accent text-3xl mb-2">Bienvenue</p>
-          <h2 class="text-5xl font-bold mb-4">Je suis Nicolas, développeur web</h2>
-          <p class="text-lg mb-6 max-w-xl mx-auto">
-            Je conçois des interfaces web modernes, performantes et accessibles. Curieux et passionné, j’adore créer des expériences uniques.
-          </p>
-          <a href="./pages/projets.html" class="inline-block bg-white text-[#4A90E2] font-bold px-6 py-3 rounded-xl hover:bg-[#E46804] hover:text-white transition">
-            Découvrir mes projets
-          </a>
-        </div>
-      </section>
-  
-      <!-- Projets -->
-      <section id="projets" class="py-20 px-6 bg-white">
-        <div class="max-w-6xl mx-auto">
-          <h3 class="text-3xl font-bold text-center mb-12 text-[#4A90E2]">Mes projets récents</h3>
-          <div class="grid md:grid-cols-3 gap-8">
-            <!-- Projet 1 -->
-            <article class="bg-[#F2F4F3] p-6 rounded-2xl shadow-md border border-[#668586] hover:scale-105 transition-transform">
-              <h4 class="text-xl font-semibold mb-2 text-[#E46804]">Site vitrine photographe</h4>
-              <p class="text-sm text-[#4A4A4A] mb-4">Un site élégant pour une photographe spécialisée dans les portraits de famille.</p>
-              <a href="#" class="text-[#4A90E2] hover:underline">Voir le projet →</a>
-            </article>
-  
-            <!-- Projet 2 -->
-            <article class="bg-[#F2F4F3] p-6 rounded-2xl shadow-md border border-[#668586] hover:scale-105 transition-transform">
-              <h4 class="text-xl font-semibold mb-2 text-[#E46804]">Only Poids du Corps</h4>
-              <p class="text-sm text-[#4A4A4A] mb-4">Un site moderne pour un coach en calisthénie, présentant ses offres et conseils sport & nutrition.</p>
-              <a href="#" class="text-[#4A90E2] hover:underline">Voir le projet →</a>
-            </article>
-  
-            <!-- Projet 3 - à venir -->
-            <article class="bg-[#F2F4F3] p-6 rounded-2xl shadow-inner border border-dashed border-[#4A90E2] hover:scale-105 transition-transform">
-              <h4 class="text-xl font-semibold mb-2 text-[#4A90E2]">projet à venir</h4>
-              <p class="text-sm text-[#4A4A4A] mb-4 italic">Un nouveau projet arrive très bientôt… restez connectés !</p>
-              <span class="inline-block text-[#E46804] font-medium">🚧 En construction</span>
-            </article>
-          </div>
-        </div>
-      </section>
-     
- <!-- ... ton contenu HTML ... -->
-
-<footer class="bg-[#0A0908] text-white py-10">
-    <div class="max-w-6xl mx-auto text-center">
-      <p class="text-lg mb-2">Une question ou une idée ?</p>
-      <p class="text-sm">
-        📧 
-        <a href="#" id="emailLink" class="no-underline text-inherit hover:text-[#E46804] transition">
-          Cliquez pour m’écrire
+      <div class="max-w-3xl mx-auto">
+        <p class="accent text-3xl mb-2">Bienvenue</p>
+        <h2 class="text-5xl font-bold mb-4">Je suis Nicolas, développeur web</h2>
+        <p class="text-lg mb-6 max-w-xl mx-auto">
+          Je conçois des interfaces web modernes, performantes et accessibles. Curieux et passionné, j’adore créer des expériences uniques.
+        </p>
+        <a href="./pages/projets.html" class="inline-block bg-white text-[#4A90E2] font-bold px-6 py-3 rounded-xl hover:bg-[#E46804] hover:text-white transition">
+          Découvrir mes projets
         </a>
-      </p>
-      <p class="text-sm mt-4 text-[#F2F4F3]">&copy; 2025 Portfolio de Nicolas</p>
-    </div>
-  </footer>
-  
-  <!-- JavaScript juste avant la fermeture du body -->
-  <script>
-    const user = "lafuentenicolas1";
-    const domain = "gmail.com";
-    const email = `${user}@${domain}`;
-    const link = document.getElementById("emailLink");
-    link.setAttribute("href", `mailto:${email}`);
-    link.innerText = email;
-  </script>
+      </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section id="projets" class="py-20 px-6 bg-white">
+      <div class="max-w-6xl mx-auto">
+        <h3 class="text-3xl font-bold text-center mb-12 text-[#4A90E2]">Mes projets récents</h3>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Projet 1 -->
+          <article class="bg-[#F2F4F3] p-6 rounded-2xl shadow-md border border-[#668586] hover:scale-105 transition-transform">
+            <h4 class="text-xl font-semibold mb-2 text-[#E46804]">Site vitrine photographe</h4>
+            <p class="text-sm text-[#4A4A4A] mb-4">Un site élégant pour une photographe spécialisée dans les portraits de famille.</p>
+            <a href="#" class="text-[#4A90E2] hover:underline">Voir le projet →</a>
+          </article>
+
+          <!-- Projet 2 -->
+          <article class="bg-[#F2F4F3] p-6 rounded-2xl shadow-md border border-[#668586] hover:scale-105 transition-transform">
+            <h4 class="text-xl font-semibold mb-2 text-[#E46804]">Only Poids du Corps</h4>
+            <p class="text-sm text-[#4A4A4A] mb-4">Un site moderne pour un coach en calisthénie, présentant ses offres et conseils sport & nutrition.</p>
+            <a href="#" class="text-[#4A90E2] hover:underline">Voir le projet →</a>
+          </article>
+
+          <!-- Projet 3 - à venir -->
+          <article class="bg-[#F2F4F3] p-6 rounded-2xl shadow-inner border border-dashed border-[#4A90E2] hover:scale-105 transition-transform">
+            <h4 class="text-xl font-semibold mb-2 text-[#4A90E2]">projet à venir</h4>
+            <p class="text-sm text-[#4A4A4A] mb-4 italic">Un nouveau projet arrive très bientôt… restez connectés !</p>
+            <span class="inline-block text-[#E46804] font-medium">🚧 En construction</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A0908] text-white py-10">
+      <div class="max-w-6xl mx-auto text-center">
+        <p class="text-lg mb-2">Une question ou une idée ?</p>
+        <p class="text-sm">
+          📧 
+          <a href="#" id="emailLink" class="no-underline text-inherit hover:text-[#E46804] transition">
+            Cliquez pour m’écrire
+          </a>
+        </p>
+        <p class="text-sm mt-4 text-[#F2F4F3]">&copy; 2025 Portfolio de Nicolas</p>
+      </div>
+    </footer>
+
+    <!-- JS pour mail -->
+    <script>
+      const user = "lafuentenicolas1";
+      const domain = "gmail.com";
+      const email = `${user}@${domain}`;
+      const link = document.getElementById("emailLink");
+      link.setAttribute("href", `mailto:${email}`);
+      link.innerText = email;
+
+      // Fonction pour gérer l'affichage du menu burger
+      document.getElementById("burgerIcon").addEventListener("click", () => {
+        const menuMobile = document.getElementById("menuMobile");
+        menuMobile.classList.toggle("hidden");
+      });
+    </script>
   </body>
-  </html>
-  
+</html>
