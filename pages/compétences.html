@@ -116,4 +116,38 @@
       </div>
     </div>
   </section>
+
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#0A0908] text-white py-10">
+        <div class="max-w-6xl mx-auto text-center">
+          <p class="text-lg mb-2">Une question ou une idée ?</p>
+          <p class="text-sm">
+            📧 
+            <a href="#" id="emailLink" class="no-underline text-inherit hover:text-[#E46804] transition">
+              Cliquez pour m’écrire
+            </a>
+          </p>
+          <p class="text-sm mt-4 text-[#F2F4F3]">&copy; 2025 Portfolio de Nicolas</p>
+        </div>
+      </footer>
+
+        <!-- JS pour mail -->
+    <script>
+        const user = "lafuentenicolas1";
+        const domain = "gmail.com";
+        const email = `${user}@${domain}`;
+        const link = document.getElementById("emailLink");
+        link.setAttribute("href", `mailto:${email}`);
+        link.innerText = email;
+  
+        // Fonction pour gérer l'affichage du menu burger
+        document.getElementById("burgerIcon").addEventListener("click", () => {
+          const menuMobile = document.getElementById("menuMobile");
+          menuMobile.classList.toggle("hidden");
+        });
+      </script>
+    </body>
+  </html>
+  
   

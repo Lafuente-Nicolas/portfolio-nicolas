@@ -58,9 +58,8 @@
           <h2 class="text-4xl font-bold mb-6 text-[#4A90E2]">Un projet ? Une question ?</h2>
           <p class="text-lg text-[#4A4A4A] mb-10">Je suis toujours partant pour discuter ou collaborer. Vous pouvez me contacter directement :</p>
     
-          <!-- Email cliquable -->
           <p class="text-xl mb-4">
-            📧 <a href="lafuentenicolas@gmail.com" id="emailLink" class="text-[#E46804] font-semibold hover:underline">Afficher l'adresse</a>
+            📧 <a href="#" id="emailLinkMain" class="text-[#E46804] font-semibold hover:underline">Afficher l'adresse</a>
           </p>
     
           <!-- Formulaire décoratif (non-fonctionnel) -->
@@ -89,25 +88,38 @@
     <footer id="contact" class="bg-[#0A0908] text-white py-10">
         <div class="max-w-6xl mx-auto text-center">
           <p class="text-lg mb-2">Une question ou une idée ?</p>
-          <p class="text-sm">
-            📧 
-            <a href="#" id="emailLink" class="no-underline text-inherit hover:text-[#E46804] transition">
-              Cliquez pour m’écrire
-            </a>
+       <!-- Email dans le footer -->
+<p class="text-sm">
+  📧 
+  <a href="#" id="emailLinkFooter" class="no-underline text-inherit hover:text-[#E46804] transition">
+    Cliquez pour m’écrire
+  </a>
+</p>
           </p>
           <p class="text-sm mt-4 text-[#F2F4F3]">&copy; 2025 Portfolio de Nicolas</p>
         </div>
       </footer>
 
-        <!-- JS pour afficher l’email -->
-  <script>
-    const user = "lafuentenicolas1";
-    const domain = "gmail.com";
-    const email = `${user}@${domain}`;
-    const link = document.getElementById("emailLink");
-    link.setAttribute("href", `mailto:${email}`);
-    link.innerText = email;
-  </script>
-
+      <script>
+        const user = "lafuentenicolas1";
+        const domain = "gmail.com";
+        const email = `${user}@${domain}`;
+      
+        // Lien dans la section principale
+        const linkMain = document.getElementById("emailLinkMain");
+        if (linkMain) {
+          linkMain.setAttribute("href", `mailto:${email}`);
+          linkMain.innerText = email;
+        }
+      
+        // Lien dans le footer
+        const linkFooter = document.getElementById("emailLinkFooter");
+        if (linkFooter) {
+          linkFooter.setAttribute("href", `mailto:${email}`);
+          linkFooter.innerText = email;
+        }
+      </script>
+      
+</html>
 </body>
 </html>
