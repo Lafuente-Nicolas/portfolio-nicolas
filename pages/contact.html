@@ -38,7 +38,7 @@
           <li><a href="../index.html" class="hover:text-[#E46804]">Accueil</a></li>
           <li><a href="projets.html" class="hover:text-[#E46804]" >Projets</a></li>
           <li><a href="contact.html" class="text-[#E46804] font-semibold">Contact</a></li>
-          <li><a href="compétences.html" class="hover:text-[#E46804]">Compétences</a></li>
+          <li><a href="competences.html" class="hover:text-[#E46804]">Compétences</a></li>
           <li><a href="cv.html" class="hover:text-[#E46804]">CV</a></li>
         </ul>
 
@@ -47,7 +47,7 @@
           <li><a href="../index.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Accueil</a></li>
           <li><a href="projets.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Projets</a></li>
           <li><a href="contact.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Contact</a></li>
-          <li><a href="competences.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Compétences</a></li>
+          <li><a href="compétences.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Compétences</a></li>
           <li><a href="cv.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">CV</a></li>
         </ul>
       </nav>
@@ -118,6 +118,11 @@
           linkFooter.setAttribute("href", `mailto:${email}`);
           linkFooter.innerText = email;
         }
+        // Fonction pour gérer l'affichage du menu burger
+        document.getElementById("burgerIcon").addEventListener("click", () => {
+          const menuMobile = document.getElementById("menuMobile");
+          menuMobile.classList.toggle("hidden");
+        });
       </script>
       
 </html>
