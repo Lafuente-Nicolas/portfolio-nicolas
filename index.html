@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio de Nicolas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand:wght@500;700&family=Sacramento&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Nunito', sans-serif;
+      }
+      h1, h2, h3 {
+        font-family: 'Quicksand', sans-serif;
+      }
+      .accent {
+        font-family: 'Sacramento', cursive;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F2F4F3] text-[#0A0908] scroll-smooth">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+      <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
+        <h1 class="text-2xl font-bold text-[#4A90E2]">Nicolas</h1>
+
+        <!-- Menu Burger -->
+        <div class="block lg:hidden">
+          <button id="burgerIcon" class="text-[#4A90E2] focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Menu Desktop -->
+        <ul id="menuDesktop" class="hidden lg:flex gap-6 text-sm">
+          <li><a href="index.html" class="hover:text-[#E46804]">Accueil</a></li>
+          <li><a href="./pages/projets.html" class="hover:text-[#E46804]">Projets</a></li>
+          <li><a href="./pages/contact.html" class="hover:text-[#E46804]">Contact</a></li>
+          <li><a href="./pages/compétences.html" class="hover:text-[#E46804]">Compétences</a></li>
+          <li><a href="./pages/cv.html" class="hover:text-[#E46804]">CV</a></li>
+        </ul>
+
+        <!-- Menu Mobile -->
+        <ul id="menuMobile" class="lg:hidden absolute top-16 left-0 w-full bg-white shadow-md p-4 hidden">
+          <li><a href="index.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Accueil</a></li>
+          <li><a href="./pages/projets.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Projets</a></li>
+          <li><a href="./pages/contact.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Contact</a></li>
+          <li><a href="./pages/cv.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">CV</a></li>
+          <li><a href="./pages/compétences.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Compétences</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 text-center bg-gradient-to-r from-[#4A90E2] to-[#668586] text-white">
+      <div class="max-w-3xl mx-auto">
+        <p class="accent text-3xl mb-2">Bienvenue</p>
+        <h2 class="text-5xl font-bold mb-4">Je suis Nicolas, développeur web</h2>
+        <p class="text-lg mb-6 max-w-xl mx-auto">
+          Je conçois des interfaces web modernes, performantes et accessibles. Curieux et passionné, j’adore créer des expériences uniques.
+        </p>
+        <a href="./pages/projets.html" class="inline-block bg-white text-[#4A90E2] font-bold px-6 py-3 rounded-xl hover:bg-[#E46804] hover:text-white transition">
+          Découvrir mes projets
+        </a>
+      </div>
+    </section>
+<!-- Présentation Nicolas -->
+<section id="a-propos" class="py-24 px-6 bg-[#F2F4F3]">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    
+    <!-- Texte de présentation -->
+    <div>
+      <h3 class="text-4xl font-bold text-[#4A90E2] mb-6">Enchanté, moi c’est Nicolas !</h3>
+      <p class="text-[#4A4A4A] text-lg leading-relaxed mb-6">
+        Je suis développeur intégrateur web, passionné par le design d’interfaces propres, accessibles et performantes. 
+        Chaque ligne de code que j’écris vise à répondre à un besoin réel, avec simplicité et efficacité.
+      </p>
+      <p class="text-[#4A4A4A] text-base leading-relaxed">
+        Curieux de nature, je me forme en continu pour rester à la page des tendances web. J’accorde une grande importance aux détails et à l’expérience utilisateur — que ce soit sur mobile ou desktop.
+      </p>
+      <a href="pages/compétences.html" class="inline-block mt-8 bg-[#E46804] text-white py-3 px-6 rounded-full text-sm font-semibold hover:bg-[#cf5a03] transition">
+        Découvrir mes compétences →
+      </a>
+    </div>
+
+    <!-- Illustration ou image -->
+    <div class="text-center">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Icône développeur" class="w-64 mx-auto opacity-90 drop-shadow-lg" />
+    </div>
+
+  </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#0A0908] text-white py-10">
+      <div class="max-w-6xl mx-auto text-center">
+        <p class="text-lg mb-2">Une question ou une idée ?</p>
+        <p class="text-sm">
+          📧 
+          <a href="#" id="emailLink" class="no-underline text-inherit hover:text-[#E46804] transition">
+            Cliquez pour m’écrire
+          </a>
+        </p>
+        <p class="text-sm mt-4 text-[#F2F4F3]">&copy; 2025 Portfolio de Nicolas</p>
+      </div>
+    </footer>
+
+    <!-- JS pour mail -->
+    <script>
+      const user = "lafuentenicolas1";
+      const domain = "gmail.com";
+      const email = `${user}@${domain}`;
+      const link = document.getElementById("emailLink");
+      link.setAttribute("href", `mailto:${email}`);
+      link.innerText = email;
+
+      // Fonction pour gérer l'affichage du menu burger
+      document.getElementById("burgerIcon").addEventListener("click", () => {
+        const menuMobile = document.getElementById("menuMobile");
+        menuMobile.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

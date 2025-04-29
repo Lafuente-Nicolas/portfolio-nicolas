@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mes Projets – Nicolas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand:wght@500;700&family=Sacramento&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Nunito', sans-serif;
+      }
+      h1, h2, h3 {
+        font-family: 'Quicksand', sans-serif;
+      }
+      .accent {
+        font-family: 'Sacramento', cursive;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F2F4F3] text-[#0A0908] scroll-smooth">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+      <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
+        <h1 class="text-2xl font-bold text-[#4A90E2]">Nicolas</h1>
+
+        <!-- Menu Burger -->
+        <div class="block lg:hidden">
+          <button id="burgerIcon" class="text-[#4A90E2] focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Menu Desktop -->
+        <ul id="menuDesktop" class="hidden lg:flex gap-6 text-sm">
+          <li><a href="../index.html" class="hover:text-[#E46804]">Accueil</a></li>
+          <li><a href="projets.html" class="hover:text-[#E46804]" >Projets</a></li>
+          <li><a href="contact.html" class="text-[#E46804] font-semibold">Contact</a></li>
+          <li><a href="competences.html" class="hover:text-[#E46804]">Compétences</a></li>
+          <li><a href="cv.html" class="hover:text-[#E46804]">CV</a></li>
+        </ul>
+
+        <!-- Menu Mobile -->
+        <ul id="menuMobile" class="lg:hidden absolute top-16 left-0 w-full bg-white shadow-md p-4 hidden">
+          <li><a href="../index.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Accueil</a></li>
+          <li><a href="projets.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Projets</a></li>
+          <li><a href="contact.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Contact</a></li>
+          <li><a href="compétences.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Compétences</a></li>
+          <li><a href="cv.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">CV</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="pt-32 pb-20 px-6">
+        <section class="max-w-3xl mx-auto bg-white p-8 rounded-2xl shadow-lg text-center">
+          <h2 class="text-4xl font-bold mb-6 text-[#4A90E2]">Un projet ? Une question ?</h2>
+          <p class="text-lg text-[#4A4A4A] mb-10">Je suis toujours partant pour discuter ou collaborer. Vous pouvez me contacter directement :</p>
+    
+          <p class="text-xl mb-4">
+            📧 <a href="#" id="emailLinkMain" class="text-[#E46804] font-semibold hover:underline">Afficher l'adresse</a>
+          </p>
+    
+          <!-- Formulaire décoratif (non-fonctionnel) -->
+          <div class="mt-10 text-left">
+            <p class="text-sm mb-4 italic text-[#668586]">Ce formulaire est une maquette. Merci d'utiliser l'adresse e-mail ci-dessus.</p>
+            <form class="space-y-6 opacity-50 pointer-events-none select-none">
+              <div>
+                <label class="block text-sm mb-1">Nom</label>
+                <input type="text" class="w-full p-3 rounded-lg border border-[#668586] bg-[#F2F4F3]" placeholder="Votre nom" />
+              </div>
+              <div>
+                <label class="block text-sm mb-1">Email</label>
+                <input type="email" class="w-full p-3 rounded-lg border border-[#668586] bg-[#F2F4F3]" placeholder="Votre email" />
+              </div>
+              <div>
+                <label class="block text-sm mb-1">Message</label>
+                <textarea rows="4" class="w-full p-3 rounded-lg border border-[#668586] bg-[#F2F4F3]" placeholder="Votre message"></textarea>
+              </div>
+              <button class="bg-[#E46804] text-white font-semibold py-2 px-6 rounded-full cursor-not-allowed">Envoyer</button>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+    <footer id="contact" class="bg-[#0A0908] text-white py-10">
+        <div class="max-w-6xl mx-auto text-center">
+          <p class="text-lg mb-2">Une question ou une idée ?</p>
+       <!-- Email dans le footer -->
+<p class="text-sm">
+  📧 
+  <a href="#" id="emailLinkFooter" class="no-underline text-inherit hover:text-[#E46804] transition">
+    Cliquez pour m’écrire
+  </a>
+</p>
+          </p>
+          <p class="text-sm mt-4 text-[#F2F4F3]">&copy; 2025 Portfolio de Nicolas</p>
+        </div>
+      </footer>
+
+      <script>
+        const user = "lafuentenicolas1";
+        const domain = "gmail.com";
+        const email = `${user}@${domain}`;
+      
+        // Lien dans la section principale
+        const linkMain = document.getElementById("emailLinkMain");
+        if (linkMain) {
+          linkMain.setAttribute("href", `mailto:${email}`);
+          linkMain.innerText = email;
+        }
+      
+        // Lien dans le footer
+        const linkFooter = document.getElementById("emailLinkFooter");
+        if (linkFooter) {
+          linkFooter.setAttribute("href", `mailto:${email}`);
+          linkFooter.innerText = email;
+        }
+        // Fonction pour gérer l'affichage du menu burger
+        document.getElementById("burgerIcon").addEventListener("click", () => {
+          const menuMobile = document.getElementById("menuMobile");
+          menuMobile.classList.toggle("hidden");
+        });
+      </script>
+      
+</html>
+</body>
+</html>
