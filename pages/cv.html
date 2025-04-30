@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mes Projets – Nicolas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand:wght@500;700&family=Sacramento&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Nunito', sans-serif;
+      }
+      h1, h2, h3 {
+        font-family: 'Quicksand', sans-serif;
+      }
+      .accent {
+        font-family: 'Sacramento', cursive;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F2F4F3] text-[#0A0908] scroll-smooth">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+      <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
+        <h1 class="text-2xl font-bold text-[#4A90E2]">Nicolas</h1>
+
+        <!-- Menu Burger -->
+        <div class="block lg:hidden">
+          <button id="burgerIcon" class="text-[#4A90E2] focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Menu Desktop -->
+        <ul id="menuDesktop" class="hidden lg:flex gap-6 text-sm">
+          <li><a href="../index.html" class="hover:text-[#E46804]">Accueil</a></li>
+          <li><a href="projets.html" class="hover:text-[#E46804]" >Projets</a></li>
+          <li><a href="contact.html" class="hover:text-[#E46804]">Contact</a></li>
+          <li><a href="compétences.html" class="hover:text-[#E46804]">Compétences</a></li>
+          <li><a href="cv.html" class="text-[#E46804] font-semibold">CV</a></li>
+        </ul>
+
+        <!-- Menu Mobile -->
+        <ul id="menuMobile" class="lg:hidden absolute top-16 left-0 w-full bg-white shadow-md p-4 hidden">
+          <li><a href="../index.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Accueil</a></li>
+          <li><a href="projets.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Projets</a></li>
+          <li><a href="contact.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Contact</a></li>
+          <li><a href="compétences.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Compétences</a></li>
+          <li><a href="cv.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">CV</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="pt-32 pb-20 px-6">
+        <section class="max-w-4xl mx-auto bg-white p-8 rounded-2xl shadow-lg">
+          <h2 class="text-4xl font-bold text-center mb-10 text-[#4A90E2]">Mon CV</h2>
+    
+          <!-- Expériences professionnelles -->
+          <div class="mb-12">
+            <h3 class="text-2xl font-semibold mb-6 text-[#E46804]">Expériences professionnelles</h3>
+            <ul class="space-y-6">
+              <li>
+                <strong>Fév. 2024 – Fév. 2025 :</strong> Serveur, Crocodile (Petite-Forêt)
+                <ul class="list-disc list-inside text-sm text-[#4A4A4A] mt-1">
+                  <li>Gestion des encaissements, chèques et opérations bancaires</li>
+                  <li>Responsable des stocks de boissons et commandes</li>
+                  <li>Service client et travail en équipe</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Déc. 2023 – Jan. 2024 :</strong> Stage en vente, Le Fouilleur (Valenciennes)
+                <ul class="list-disc list-inside text-sm text-[#4A4A4A] mt-1">
+                  <li>Compréhension des besoins clients et expérience en magasin</li>
+                  <li>Interaction et réponse claire aux questions clients</li>
+                </ul>
+              </li>
+              <li>
+                <strong>Juin 2023 – Août 2023 :</strong> Serveur, La Baraque (Brunehaut)
+                <ul class="list-disc list-inside text-sm text-[#4A4A4A] mt-1">
+                <li>Service client et travail en équipe</li>
+                <li>encaissements des clients</li>
+              </li> </ul>
+            </ul>
+          </div>
+    
+          <!-- Formation -->
+          <div>
+            <h3 class="text-2xl font-semibold mb-6 text-[#E46804]">Formation</h3>
+            <ul class="space-y-4 text-sm text-[#4A4A4A]">
+               <li><strong> 2025 :</strong>Formation intensive Développeur Front-End– Simplon</li>
+              <li><strong>2025 :</strong> Formation intensive Développeur Intégrateur Web – Simplon</li>
+              <li><strong>2024 :</strong> 1ère année BUT Technique de Commercialisation – Campus Les Tertiales</li>
+              <li><strong>2023 :</strong> Baccalauréat STMG – Lycée Ernest Couteaux, Saint-Amand-les-Eaux</li>
+              <li><strong>2020 :</strong> Brevet des collèges – Collège Fernig, Mortagne-du-Nord</li>
+            </ul>
+          </div>
+          <div class="mt-12">
+            <h3 class="text-2xl font-semibold mb-6 text-[#E46804]">Compétences personnelles</h3>
+            <ul class="list-disc list-inside text-sm text-[#4A4A4A] space-y-2">
+              <li>Bon relationnel</li>
+              <li>Travail d’équipe</li>
+              <li>De nature sociable</li>
+            </ul>
+          </div>
+        </section>
+
+      </main>
+
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#0A0908] text-white py-10">
+        <div class="max-w-6xl mx-auto text-center">
+          <p class="text-lg mb-2">Une question ou une idée ?</p>
+          <p class="text-sm">
+            📧 
+            <a href="#" id="emailLink" class="no-underline text-inherit hover:text-[#E46804] transition">
+              Cliquez pour m’écrire
+            </a>
+          </p>
+          <p class="text-sm mt-4 text-[#F2F4F3]">&copy; 2025 Portfolio de Nicolas</p>
+        </div>
+      </footer>
+  
+      <!-- JS pour mail -->
+      <script>
+        const user = "lafuentenicolas1";
+        const domain = "gmail.com";
+        const email = `${user}@${domain}`;
+        const link = document.getElementById("emailLink");
+        link.setAttribute("href", `mailto:${email}`);
+        link.innerText = email;
+  
+        // Fonction pour gérer l'affichage du menu burger
+        document.getElementById("burgerIcon").addEventListener("click", () => {
+          const menuMobile = document.getElementById("menuMobile");
+          menuMobile.classList.toggle("hidden");
+        });
+      </script>
+    </body>
+  </html>
+  

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mes Projets – Nicolas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand:wght@500;700&family=Sacramento&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Nunito', sans-serif;
+      }
+      h1, h2, h3 {
+        font-family: 'Quicksand', sans-serif;
+      }
+      .accent {
+        font-family: 'Sacramento', cursive;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F2F4F3] text-[#0A0908] scroll-smooth">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+      <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
+        <h1 class="text-2xl font-bold text-[#4A90E2]">Nicolas</h1>
+
+        <!-- Menu Burger -->
+        <div class="block lg:hidden">
+          <button id="burgerIcon" class="text-[#4A90E2] focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Menu Desktop -->
+        <ul id="menuDesktop" class="hidden lg:flex gap-6 text-sm">
+          <li><a href="../index.html" class="hover:text-[#E46804]">Accueil</a></li>
+          <li><a href="projets.html" class="text-[#E46804] font-semibold">Projets</a></li>
+          <li><a href="contact.html" class="hover:text-[#E46804]">Contact</a></li>
+          <li><a href="compétences.html" class="hover:text-[#E46804]">Compétences</a></li>
+          <li><a href="cv.html" class="hover:text-[#E46804]">CV</a></li>
+        </ul>
+
+        <!-- Menu Mobile -->
+        <ul id="menuMobile" class="lg:hidden absolute top-16 left-0 w-full bg-white shadow-md p-4 hidden">
+          <li><a href="../index.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Accueil</a></li>
+          <li><a href="projets.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Projets</a></li>
+          <li><a href="contact.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Contact</a></li>
+          <li><a href="compétences.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Compétences</a></li>
+          <li><a href="cv.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">CV</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="pt-32 pb-12 text-center bg-[#4A90E2] text-white">
+      <h2 class="text-5xl font-bold mb-2">Mes Réalisations</h2>
+      <p class="text-lg">Plonge dans les projets qui m'ont fait progresser</p>
+    </section>
+  
+    <!-- Projet 1 -->
+    <section class="py-16 px-6 bg-white">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
+        <img src="../img/babypics.png" alt="Photographe" class="rounded-xl shadow-md w-full md:w-3/5">
+        <div class="md:w-2/5">
+          <h3 class="text-2xl font-bold text-[#E46804] mb-2">Site vitrine pour une photographe</h3>
+          <p class="text-sm text-[#4A4A4A] mb-4">
+            Un site doux et épuré, pensé pour mettre en valeur les photos. Responsive, accessible, et optimisé SEO.
+          </p>
+          <a href="https://lafuente-nicolas.github.io/Brief-Baby-pics/" class="inline-block mt-2 text-[#4A90E2] hover:underline font-medium">Voir le projet →</a>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Projet 2 -->
+    <section class="py-16 px-6 bg-[#F2F4F3]">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row-reverse items-center gap-10">
+        <img src="../img/pdc.png" alt="Calisthénie" class="rounded-xl shadow-md w-full md:w-3/5">
+        <div class="md:w-2/5">
+          <h3 class="text-2xl font-bold text-[#E46804] mb-2">Only Poids du Corps</h3>
+          <p class="text-sm text-[#4A4A4A] mb-4">
+            Site complet pour coach sportif : planning, offres, blog, prise de RDV. UX pensée pour mobile.
+          </p>
+          <a href="https://lafuente-nicolas.github.io/site-Milan/" class="inline-block mt-2 text-[#4A90E2] hover:underline font-medium">Voir le projet →</a>
+        </div>
+      </div>
+    </section>
+  
+    <!-- Projet à venir -->
+    <section class="py-20 bg-gradient-to-r from-[#668586] to-[#4A90E2] text-white text-center">
+      <div class="max-w-xl mx-auto">
+        <h3 class="text-3xl font-bold mb-4">🚧 Nouveau projet en préparation</h3>
+        <p class="text-lg mb-6 italic">Un projet original arrive bientôt… encore un peu de patience !</p>
+        <span class="bg-white text-[#E46804] py-2 px-4 rounded-full font-semibold">Restez connectés</span>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#0A0908] text-white py-10">
+      <div class="max-w-6xl mx-auto text-center">
+        <p class="text-lg mb-2">Une question ou une idée ?</p>
+        <p class="text-sm">
+          📧 
+          <a href="#" id="emailLink" class="no-underline text-inherit hover:text-[#E46804] transition">
+            Cliquez pour m’écrire
+          </a>
+        </p>
+        <p class="text-sm mt-4 text-[#F2F4F3]">&copy; 2025 Portfolio de Nicolas</p>
+      </div>
+    </footer>
+
+    <!-- JS pour mail -->
+    <script>
+      const user = "lafuentenicolas1";
+      const domain = "gmail.com";
+      const email = `${user}@${domain}`;
+      const link = document.getElementById("emailLink");
+      link.setAttribute("href", `mailto:${email}`);
+      link.innerText = email;
+
+      // Fonction pour gérer l'affichage du menu burger
+      document.getElementById("burgerIcon").addEventListener("click", () => {
+        const menuMobile = document.getElementById("menuMobile");
+        menuMobile.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

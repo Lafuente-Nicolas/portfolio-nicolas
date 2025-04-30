@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mes Projets – Nicolas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Quicksand:wght@500;700&family=Sacramento&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        font-family: 'Nunito', sans-serif;
+      }
+      h1, h2, h3 {
+        font-family: 'Quicksand', sans-serif;
+      }
+      .accent {
+        font-family: 'Sacramento', cursive;
+      }
+    </style>
+  </head>
+  <body class="bg-[#F2F4F3] text-[#0A0908] scroll-smooth">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+      <nav class="max-w-6xl mx-auto flex items-center justify-between p-4">
+        <h1 class="text-2xl font-bold text-[#4A90E2]">Nicolas</h1>
+
+        <!-- Menu Burger -->
+        <div class="block lg:hidden">
+          <button id="burgerIcon" class="text-[#4A90E2] focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Menu Desktop -->
+        <ul id="menuDesktop" class="hidden lg:flex gap-6 text-sm">
+          <li><a href="../index.html" class="hover:text-[#E46804]">Accueil</a></li>
+          <li><a href="projets.html" class="hover:text-[#E46804]" >Projets</a></li>
+          <li><a href="contact.html" class="hover:text-[#E46804]">Contact</a></li>
+          <li><a href="competences.html" class="text-[#E46804] font-semibold">Compétences</a></li>
+          <li><a href="cv.html" class="hover:text-[#E46804]">CV</a></li>
+        </ul>
+
+        <!-- Menu Mobile -->
+        <ul id="menuMobile" class="lg:hidden absolute top-16 left-0 w-full bg-white shadow-md p-4 hidden">
+          <li><a href="../index.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Accueil</a></li>
+          <li><a href="projets.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Projets</a></li>
+          <li><a href="contact.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Contact</a></li>
+          <li><a href="compétences.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">Compétences</a></li>
+          <li><a href="cv.html" class="block py-2 text-[#4A90E2] hover:text-[#E46804]">CV</a></li>
+        </ul>
+      </nav>
+    </header>
+
+     <!-- Section titre -->
+  <section class="pt-32 pb-12 text-center bg-[#4A90E2] text-white">
+    <h2 class="text-5xl font-bold mb-2">Mes Compétences</h2>
+    <p class="text-lg">Techniques & humaines — au service de vos projets</p>
+  </section>
+
+  <!-- Section compétences techniques -->
+  <section class="py-16 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-[#E46804] mb-10 text-center">Compétences techniques</h3>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="bg-[#F2F4F3] p-6 rounded-xl shadow-md">
+          <h4 class="text-xl font-semibold mb-2 text-[#4A90E2]">HTML / CSS</h4>
+          <p class="text-sm text-[#4A4A4A]">Maitrise du HTML5 sémantique, CSS3 moderne, responsive design avec TailwindCSS et flexbox/grid.</p>
+        </div>
+        <div class="bg-[#F2F4F3] p-6 rounded-xl shadow-md">
+          <h4 class="text-xl font-semibold mb-2 text-[#4A90E2]">JavaScript</h4>
+          <p class="text-sm text-[#4A4A4A]">JS vanilla, manipulation du DOM, interactivité, menus burger, composants dynamiques.</p>
+        </div>
+        <div class="bg-[#F2F4F3] p-6 rounded-xl shadow-md">
+          <h4 class="text-xl font-semibold mb-2 text-[#4A90E2]">Git / GitHub</h4>
+          <p class="text-sm text-[#4A4A4A]">Travail en équipe avec branches, gestion de projet via GitHub Projects et issues.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section compétences personnelles -->
+  <section class="py-16 px-6 bg-[#668586] text-white">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-3xl font-bold mb-10 text-center">Compétences humaines</h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-[#4A90E2] p-6 rounded-xl shadow-lg">
+          <h4 class="text-xl font-semibold mb-2">Travail d’équipe</h4>
+          <p class="text-sm">Participation active à des projets collaboratifs avec communication efficace et répartition des tâches.</p>
+        </div>
+        <div class="bg-[#4A90E2] p-6 rounded-xl shadow-lg">
+          <h4 class="text-xl font-semibold mb-2">Créativité & adaptation</h4>
+          <p class="text-sm">Force de proposition dans la conception graphique et l’amélioration UX des interfaces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section outils -->
+<section class="py-16 px-6 bg-white">
+    <div class="max-w-6xl mx-auto">
+      <h3 class="text-3xl font-bold text-center text-[#E46804] mb-10">Outils & environnement</h3>
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div class="bg-[#F2F4F3] p-6 rounded-xl shadow-md">
+          <h4 class="text-xl font-semibold mb-2 text-[#4A90E2]">Figma</h4>
+          <p class="text-sm text-[#4A4A4A]">Création de maquettes responsives, prototypage et collaboration UX/UI avec les clients ou l'équipe.</p>
+        </div>
+        <div class="bg-[#F2F4F3] p-6 rounded-xl shadow-md">
+          <h4 class="text-xl font-semibold mb-2 text-[#4A90E2]">Markdown</h4>
+          <p class="text-sm text-[#4A4A4A]">Utilisé pour rédiger des documentations claires, des README et des guides techniques sur GitHub.</p>
+        </div>
+        <div class="bg-[#F2F4F3] p-6 rounded-xl shadow-md">
+          <h4 class="text-xl font-semibold mb-2 text-[#4A90E2]">Linux Mint</h4>
+          <p class="text-sm text-[#4A4A4A]">Mon environnement de travail principal : terminal, gestion des paquets, scripts, et performances optimisées.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-[#0A0908] text-white py-10">
+        <div class="max-w-6xl mx-auto text-center">
+          <p class="text-lg mb-2">Une question ou une idée ?</p>
+          <p class="text-sm">
+            📧 
+            <a href="#" id="emailLink" class="no-underline text-inherit hover:text-[#E46804] transition">
+              Cliquez pour m’écrire
+            </a>
+          </p>
+          <p class="text-sm mt-4 text-[#F2F4F3]">&copy; 2025 Portfolio de Nicolas</p>
+        </div>
+      </footer>
+
+        <!-- JS pour mail -->
+    <script>
+        const user = "lafuentenicolas1";
+        const domain = "gmail.com";
+        const email = `${user}@${domain}`;
+        const link = document.getElementById("emailLink");
+        link.setAttribute("href", `mailto:${email}`);
+        link.innerText = email;
+  
+        // Fonction pour gérer l'affichage du menu burger
+        document.getElementById("burgerIcon").addEventListener("click", () => {
+          const menuMobile = document.getElementById("menuMobile");
+          menuMobile.classList.toggle("hidden");
+        });
+      </script>
+    </body>
+  </html>
+  
+  
